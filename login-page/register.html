@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <h1>Cadastre-se Já!</h1>
+
+        <div class="input-group">
+          <label>Nome:</label>
+          <input type="text" placeholder="Nome completo" required />
+        </div>
+
+        <div class="input-group">
+          <label> Email: </label>
+          <input type="email" placeholder="Seu email" required />
+        </div>
+
+        <div class="input-group">
+          <label> Telefone: </label>
+          <input type="number" placeholder="Telefone para contato" required />
+        </div>
+
+        <div class="input-group">
+          <label> Senha: </label>
+          <input type="password" placeholder="Digite sua senha" required />
+        </div>
+
+        <div class="input-group">
+          <label for="sexo">Selecione seu sexo:</label>
+          <select id="sexo" name="sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="input-group-checkbox">
+          <input type="checkbox" />
+          <label for="">Eu concordo como os termos de uso.</label>
+        </div>
+
+        <button type="submit" class="submit-button">Criar Conta</button>
+      </form>
+
+      <div class="another-forms">
+        <span>OR</span>
+      <div class="another-forms-icon" icon>
+        <a href=""><img src="../img/google.png" alt=""></a>
+        <a href=""><img src="../img/facebook.png" alt=""></a>
+        <a href=""><img src="../img/linkedin.png" alt=""></a>
+      </div>
+     </div>
+
+    </main>
+  </body>
+</html>
