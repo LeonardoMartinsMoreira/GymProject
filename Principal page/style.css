@@ -86,6 +86,8 @@ nav .ul-list {
 .impact-section h1 {
     color: white;
     font-size: 40px;
+
+    
 }
 
 .impact-section span {
@@ -134,7 +136,7 @@ nav .ul-list {
 }
 
 .section-location span {
-    color: #ffee00;
+    color: #ffcc00;
 }
 
 .section-location img {
@@ -187,14 +189,14 @@ nav .ul-list {
 
 
 .experience-section h2 span {
-    color: #ffee00;
+    color: #ffcc00;
 }
 
 .cards-conteiner {
     text-align: center;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
     justify-content: center;
     margin-top: 10px;
 }
@@ -206,18 +208,28 @@ nav .ul-list {
     transition: 1px;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
 .cards {
     border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     transition: 0.1s;
     border: solid 0px #ffee00;
     font-weight: 200;
+    transition: all linear 0.5s;
 }
 
 .cards:hover {
     border: solid 2px #fffb00;
     box-shadow: none;
     transition: 0.1s;
+    transform: scale(1.05);
 }
 
 
@@ -284,7 +296,6 @@ footer h2 {
     position: absolute;
     margin-top: 100px;
 }
-
 
 
 
