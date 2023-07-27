@@ -27,7 +27,7 @@ nav {
 }
 
 .logo span {
-    color: #fff23d;
+    color: #ffb612;
 }
 
 nav .ul-list {
@@ -48,7 +48,7 @@ nav .ul-list {
     content: " ";
     width: 0px;
     height: 0px;
-    background-color: #ffee00;
+    background-color: #ffb612;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -75,23 +75,35 @@ nav .ul-list {
     opacity: 0.85;
 }
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        top: 100%;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .impact-section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    animation: fade-in 3s;
 }
 
 .impact-section h1 {
     color: white;
     font-size: 40px;
 
-    
+
 }
 
 .impact-section span {
-    color: #fff23d;
+    color: #ffb612;
     transition: 0.5s;
 }
 
@@ -112,7 +124,7 @@ nav .ul-list {
 .impact-section .btn {
     text-decoration: none;
     padding: 15px 20px;
-    background-color: #fff23d;
+    background-color: #ffb612;
     color: rgb(0, 0, 0);
     border-radius: 7px;
     transition: 0.5s;
@@ -191,7 +203,7 @@ nav .ul-list {
 .experience-section h2 span {
     color: #ffcc00;
 }
-
+    
 .cards-conteiner {
     text-align: center;
     display: grid;
@@ -208,13 +220,7 @@ nav .ul-list {
     transition: 1px;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(360deg);
-    }
-}
+
 
 .cards {
     border-radius: 10px;
@@ -222,7 +228,9 @@ nav .ul-list {
     transition: 0.1s;
     border: solid 0px #ffee00;
     font-weight: 200;
-    transition: all linear 0.5s;
+    animation: entrada-lado 3s;
+    transition: all linear 0.3s;
+
 }
 
 .cards:hover {
@@ -285,7 +293,7 @@ footer h2 {
 }
 
 .footer-logo span {
-    color: #fff23d;
+    color: #ffb612;
 }
 
 .footer-logo::after {
@@ -297,6 +305,23 @@ footer h2 {
     margin-top: 100px;
 }
 
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="left"] {
+    transform: translate3d(-500px, 0, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(-500px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
 
 
 
@@ -307,12 +332,12 @@ footer h2 {
     nav {
         position: static;
         flex-wrap: wrap;
-            justify-content: center;
+        justify-content: center;
     }
 
     nav .ul-list {
-            margin-right: 0;
-            font-size: 15px;
+        margin-right: 0;
+        font-size: 15px;
     }
 
     .impact-section h1 {
@@ -333,10 +358,10 @@ footer h2 {
         display: none;
     }
 
-        .section-location a {
-            padding: 8px 30px;
-                margin-top: 20%;
-        }
+    .section-location a {
+        padding: 8px 30px;
+        margin-top: 20%;
+    }
 
     .app-info {
         text-align: center;
@@ -350,6 +375,7 @@ footer h2 {
         flex-wrap: wrap;
         justify-content: start;
     }
+
     footer {
         height: 100vh;
     }
