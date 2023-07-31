@@ -25,7 +25,7 @@
   color: #ffb700;
  }
 
- label {
+ .input-group   label {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: white;
@@ -55,7 +55,6 @@
   width: 365px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
  }
  
  .input-group {
@@ -67,6 +66,8 @@
 .input-group-checkbox {
   display: flex;
   gap: 10px;
+  color: white;
+  font-family: 'Poppins';
 }
 
 .submit-button {
@@ -94,8 +95,6 @@ span:hover {
   transition: 0.5s;
   color: #ffb700;
 }
-
-
 
 main span::before, main span::after {
   position: absolute;
@@ -129,3 +128,25 @@ main span::after {
   width: 50px;
 }
 
+@media (max-width: 700px) {
+    h1 {
+      margin-top: 5%;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    main {
+      gap: 0;
+      justify-content: flex-start;
+    }
+
+    input {
+      padding: 8px;
+    }
+
+    form {
+      margin-top: 10px;
+      width: 320px;
+    }
+
+}
